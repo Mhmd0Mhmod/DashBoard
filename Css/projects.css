@@ -1,0 +1,76 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+/* Start main Seciton */
+section {
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+section .project .date {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+section .project div.team{
+    min-height: 80px;
+}
+section .project div.team a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section .project div.team img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+section .project div.team a:nth-child(2) {
+    left: 25px;
+}
+section .project div.team a:nth-child(3) {
+    left: 50px;
+}
+section .project div.team a:nth-child(4) {
+    left: 75px;
+}
+section .project div.team a:nth-child(5) {
+    left: 100px;
+}
+section .project a:hover  {
+	z-index: 20000000;
+}
+section .project .skills{
+    gap: 5px;
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+@media (width <= 767px) {
+    section {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .project .skills{
+        width: 100%; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .project > div:last-child{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.project .process{
+    width: 260px;
+    border-radius: 10px;
+    height: 8px;
+}
+.project .process >span{
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+}

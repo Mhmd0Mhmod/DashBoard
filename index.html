@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- normalize -->
+		<link rel="stylesheet" href="Css/normalize.css" />
+		<!-- Font Awsme -->
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<!-- Css -->
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet" />
+		<title>Template || Four</title>
+	</head>
+
+	<body>
+		<div class="all-page d-felx">
+			<aside class="bg-white padd-20 pos-relative">
+				<h3 class="pos-relative mar-t-0 text-c " onclick="hidaside(this)">Mohamed</h3>
+				<h3 class="pos-relative mar-t-0 text-c d-none" onclick="hidaside(this)">OZO</h3>
+				<ul>
+					<li>
+						<a href="index.html"
+							class="active d-felx align-center f-s-14 c-black bor-rad-6 pad-10">
+							<i class="fa-solid fa-chart-line fa-fw"></i>
+							<span class="hide-mobile">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="settings.html">
+							<i class="fa-solid fa-gear fa-fw"></i>
+							<span class="hide-mobile">Settings</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="profile.html">
+							<i class="fa-regular fa-user fa-fw"></i>
+							<span class="hide-mobile">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="projects.html">
+							<i class="fa-solid fa-diagram-project fa-fw"></i>
+							<span class="hide-mobile">Projects</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="courses.html">
+							<i class="fa-solid fa-graduation-cap fa-fw"></i>
+							<span class="hide-mobile">Courses</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="friends.html">
+							<i class="fa-regular fa-circle-user fa-fw"></i>
+							<span class="hide-mobile">Friends</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="files.html">
+							<i class="fa-regular fa-file fa-fw"></i>
+							<span class="hide-mobile">Files</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="plans.html">
+							<i class="fa-regular fa-credit-card fa-fw"></i>
+							<span class="hide-mobile">Plans</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+			<main class="w-full">
+				<!-- Start Head -->
+				<nav class="bg-white between-flex padd-15">
+					<div class="search pos-relative">
+						<input type="search" placeholder="Type a Keyword" class="pad-10 bor-rad-6 f-s-13" />
+					</div>
+					<div class="icon d-felx align-center">
+						<span class="pos-relative notification">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="imgs/avatar.png" alt />
+					</div>
+				</nav>
+				<h1 class="pos-relative">Dashboard</h1>
+				<section class="d-grid gap-20 wel">
+					<div class="welcome bg-white bor-rad-10 text-c-mobile block-mobile">
+						<div class="intro padd-20 d-felx bg-eee space-between bor-rad-10">
+							<div>
+								<h2 class="mar-0">Welcome</h2>
+								<p class="c-gray mar-t-5">Mohamed</p>
+							</div>
+							<img src="imgs/welcome.png" class="hide-mobile" />
+						</div>
+						<img src="imgs/avatar.png" class="avatar">
+						<div class="body text-c d-felx padd-20 mar-t-20 mar-b-20 block-mobile ">
+							<div>
+								Mohamed Mahmoud<span class="d-block c-gray f-s-14 mar-t-10">Web
+									Developer</span>
+							</div>
+							<div>
+								5
+								<span class="d-block c-gray f-s-14 mar-t-10">Projects</span>
+							</div>
+							<div>
+								$500
+								<span class="d-block c-gray f-s-14 mar-t-10">Earned</span>
+							</div>
+						</div>
+						<a href="profile.html"
+							class="visit d-block f-s-14 bor-rad-6 bg-blue c-white btn-shape">
+							Profile</a>
+					</div>
+					<!-- Yearly Target -->
+					<div class="yearly-target padd-20 bg-white bor-rad-10">
+						<h2 class="mar-t-0 mar-b-10 ">
+							Yearly Target
+						</h2>
+						<p class="mar-t-0 mar-b-20 c-gray f-s-15">Target of the Year</p>
+						<div class="targets-row mar-20 blue center-flex">
+							<div class="icon center-flex">
+								<i class="fa-solid fa-dollar-sign c-blue"></i>
+							</div>
+							<div class="details">
+								<span class="f-s-14 c-gray">Money</span>
+								<span class="d-block mar-b-10 mar-t-5 fw-bold">$20.000</span>
+								<div class="prograss pos-relative">
+									<div style="width: 40%;">
+										<span class="bg-blue blue">
+											<span class="bg-blue">40%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="targets-row mar-20 orange center-flex">
+							<div class="icon center-flex">
+								<i class="fa-solid fa-code fa-lg c-orange"></i>
+							</div>
+							<div class="details">
+								<span class="f-s-14 c-gray">Projects</span>
+								<span class="d-block mar-b-10 mar-t-5 fw-bold">55</span>
+								<div class="prograss pos-relative">
+									<div style="width: 55%;">
+										<span class="bg-orange orange">
+											<span class="bg-orange">55%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="targets-row mar-20 green center-flex">
+							<div class="icon center-flex">
+								<i class="fa-solid fa-users c-green"></i>
+							</div>
+							<div class="details">
+								<span class="f-s-14 c-gray">Teams</span>
+								<span class="d-block mar-b-10 mar-t-5 fw-bold">20</span>
+								<div class="prograss pos-relative">
+									<div style="width: 20%;">
+										<span class="bg-green green">
+											<span class="bg-green">20%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--End Yearly Target -->
+					<!-- start Quick Draft  -->
+					<div class="quick-draft padd-20 bg-white bor-rad-10">
+						<h2 class="mar-t-0 mar-b-10">Quick Draft</h2>
+						<p class="mar-t-0 mar-b-20 c-gray f-s-14">Write A Draft For Your ideas
+						</p>
+						<form action>
+							<input type="text" placeholder="title"
+								class="d-block mar-b-20 w-full pad-10 bor-none bg-eee bor-rad-6">
+							<textarea placeholder="Your Thought"
+								class="d-block mar-b-20 w-full pad-10 bor-none bg-eee bor-rad-6"></textarea>
+							<input type="submit" value="Save"
+								class="save bg-blue bor-none d-block f-s-14 bor-rad-6 c-white btn-shape">
+						</form>
+					</div>
+					<!-- End Quick Draft  -->
+
+					<!-- Start tickets -->
+					<div class="tickets padd-20 bg-white bor-rad-10">
+						<h2 class="mar-t-0 mar-b-10">Tickets Statistics</h2>
+						<p class="mar-t-0 mar-b-20 c-gray f-s-15">Everything About Support Tickets</p>
+						<div class="d-felx text-c gap-20 f-wrap">
+							<div class="box padd-20 bor-rad-10 f-s-15 c-gray">
+								<i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+								<span class="d-block c-black fw-bold f-s-25 mar-b-5">5000</span>
+								Total
+							</div>
+							<div class="box padd-20 bor-rad-10 f-s-15 c-gray">
+								<i class="fa-solid fa-spinner fa-2x mar-b-10 c-blue"></i>
+								<span class="d-block c-black fw-bold f-s-25 mar-b-5">200</span>
+								Pending
+							</div>
+							<div class="box padd-20 bor-rad-10 f-s-15 c-gray">
+								<i class="fa-regular fa-circle-check fa-2x mar-b-10 c-green"></i>
+								<span class="d-block c-black fw-bold f-s-25 mar-b-5">1000</span>
+								Closed
+							</div>
+							<div class="box padd-20 bor-rad-10 f-s-15 c-gray">
+								<i class="fa-regular fa-rectangle-xmark fa-2x mar-b-10 c-red"></i>
+								<span class="d-block c-black fw-bold f-s-25 mar-b-5">100</span>
+								Deleted
+							</div>
+						</div>
+					</div>
+					<!-- end tickets -->
+					<!-- Last News -->
+					<div class="last-news padd-20 bg-white bor-rad-10 text-c-mobile">
+						<h2 class="mar-t-0" style="margin-bottom: 55px;">Latest News</h2>
+						<div class="d-felx align-center ">
+							<img src="imgs/news-01.png" alt>
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20">Created SASS Section</h3>
+								<p class="c-gray f-s-14">New SASS Examples & Tutorials
+								</p>
+							</div>
+							<div class="btn-shape bg-eee f-s-13 label">
+								3 Days Ago
+							</div>
+						</div>
+						<div class="d-felx align-center">
+							<img src="imgs/news-02.png" alt>
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20">Changed The Design
+								</h3>
+								<p class="c-gray f-s-14">A Brand New Website Design
+								</p>
+							</div>
+							<div class="btn-shape bg-eee f-s-13 label">
+								10 Days Ago
+							</div>
+						</div>
+						<div class="d-felx align-center">
+							<img src="imgs/news-03.png" alt>
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20">Team Increased</h3>
+								<p class="c-gray  f-s-14">3 Developers Joined The Team
+								</p>
+							</div>
+							<div class="btn-shape bg-eee f-s-13 label">
+								6 Days Ago
+							</div>
+						</div>
+						<div class="d-felx align-center">
+							<img src="imgs/news-04.png" alt>
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20">Added Payment Gateway</h3>
+								<p class="c-gray f-s-14">Many New Payment Gateways Added
+								</p>
+							</div>
+							<div class="btn-shape bg-eee f-s-13 label">
+								1 Days Ago
+							</div>
+						</div>
+					</div>
+					<!-- End-Last News -->
+					<!-- Last Tasks -->
+					<div class="last-tasks padd-20 bg-white bor-rad-10">
+						<div class="between-flex">
+							<h2 class="mar-t-0 mar-b-20">Latest Tasks</h2>
+							<a onclick="reloadpage()" class="d-block bg-eee bor-rad-6 r-icon"><i
+									class="fa-solid fa-rotate-right btn-shape"></i></a>
+						</div>
+						<div class="d-felx align-center" id="task-1">
+							<div class="text">
+								<h3 class="mar-t-0 ">Record One New Video</h3>
+								<p class="c-gray mar-t-0 mar-b-5">Record Python Create Exe Project
+								</p>
+							</div>
+							<div style="user-select: none;">
+								<div class="checkbox" onclick="check(this,'task-1')">
+									<i class="fa-solid fa-circle-check  mar-0 c-blue"
+										style="font-size: 0px;"></i>
+								</div>
+								<i class="fa-regular fa-trash-can delete fa-fw"
+									onclick="delme('task-1')"></i>
+							</div>
+						</div>
+						<div class="d-felx align-center" id="task-2">
+							<div class="text">
+								<h3 class="mar-t-0 ">Write Article
+								</h3>
+								<p class="c-gray mar-t-0 mar-b-5">Write Low Level vs High Level
+									Languages
+								</p>
+							</div>
+							<div style="	user-select: none;">
+								<div class="checkbox" onclick="check(this,'task-2')">
+									<i class="fa-solid fa-circle-check  mar-0 c-blue"
+										style="font-size: 0px;"></i>
+								</div>
+								<i class="fa-regular fa-trash-can delete fa-fw"
+									onclick="delme('task-2')"></i>
+							</div>
+						</div>
+						<div class="d-felx align-center" id="task-3">
+							<div class="text">
+								<h3 class="mar-t-0 ">Finish Project</h3>
+								<p class="c-gray mar-t-0 mar-b-5">Publish Academy Programming Project
+								</p>
+							</div>
+							<div style="	user-select: none;">
+								<div class="checkbox" onclick="check(this,'task-3')">
+									<i class="fa-solid fa-circle-check  mar-0 c-blue"
+										style="font-size: 0px;"></i>
+								</div>
+								<i class="fa-regular fa-trash-can delete fa-fw"
+									onclick="delme('task-3')"></i>
+							</div>
+						</div>
+						<div class="d-felx align-center " id="task-4">
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20 ">Attend The Meeting
+								</h3>
+								<p class="c-gray mar-t-0 mar-b-5">Attend The Project Business Analysis
+									Meeting
+								</p>
+							</div>
+
+							<div style="	user-select: none;">
+								<div class="checkbox" onclick="check(this,'task-4')">
+									<i class="fa-solid fa-circle-check  mar-0 c-blue"
+										style="font-size: 0px;"></i>
+								</div>
+								<i class="fa-regular fa-trash-can delete fa-fw"
+									onclick="delme('task-4')"></i>
+							</div>
+						</div>
+						<div class="d-felx align-center" id="task-5">
+							<div class="text">
+								<h3 class="mar-t-0 mar-b-20">Finish Lesson</h3>
+								<p class="c-gray mar-t-0 mar-b-5 ">Finish Teaching Flex Box
+								</p>
+							</div>
+							<div style="	user-select: none;">
+								<div class="checkbox" onclick="check(this,'task-5')">
+									<i class="fa-solid fa-circle-check  mar-0 c-blue"
+										style="font-size: 0px;"></i>
+								</div>
+								<i class="fa-regular fa-trash-can delete fa-fw"
+									onclick="delme('task-5')"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End-Last Tasks -->
+					<!-- Start Top Search  -->
+					<div class="top-search padd-20 bg-white bor-rad-10">
+						<h2 class="mar-t-0 mar-b-20">Top Search Items</h2>
+						<div class="between-flex c-gray">
+							<p>Keyword</p>
+							<p>Search Count</p>
+						</div>
+						<div class="between-flex  pad-t-15 pad-b-15">
+							<span>Programming</span>
+							<span class="btn-shape bg-eee">220</span>
+						</div>
+						<div class="between-flex pad-t-15 pad-b-15">
+							<span>JavaScript</span>
+							<span class="btn-shape bg-eee pad-t-15 pad-b-15">180</span>
+						</div>
+						<div class="between-flex pad-t-15 pad-b-15">
+							<span>PHP</span>
+							<span class="btn-shape bg-eee">120</span>
+						</div>
+						<div class="between-flex pad-t-15 pad-b-15">
+							<span>Code</span>
+							<span class="btn-shape bg-eee">115</span>
+						</div>
+						<div class="between-flex pad-t-15 pad-b-15">
+							<span>Design</span>
+							<span class="btn-shape bg-eee">100</span>
+						</div>
+						<div class="between-flex pad-t-15 pad-b-15">
+							<span>Logic</span>
+							<span class="btn-shape bg-eee">99</span>
+						</div>
+					</div>
+					<!-- end Top Search  -->
+					<!--Start Latest Uploads  -->
+					<div class="latest-Uploads padd-20 bor-rad-10 bg-white">
+						<h2 class="mar-t-0 mar-b-20">Latest Uploads</h2>
+						<div class="between-flex">
+							<div class="d-felx align-center ">
+								<img src="imgs/pdf.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">OZO</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">3.0mb</span>
+						</div>
+						<div class="between-flex">
+							<div class="d-felx align-center">
+								<img src="imgs/avi.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">Salah El-Din</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">8.0mb</span>
+						</div>
+						<div class="between-flex">
+							<div class="d-felx align-center">
+								<img src="imgs/zip.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">Seif El-Din</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">4.3mb</span>
+						</div>
+						<div class="between-flex">
+							<div class="d-felx align-center">
+								<img src="imgs/eps.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">Sherif Ibrahiem</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">5.7mb</span>
+						</div>
+						<div class="between-flex align-center">
+							<div class="d-felx align-center">
+								<img src="imgs/dll.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">Ahmed</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">8.9mb</span>
+						</div>
+						<div class="between-flex">
+							<div class="d-felx align-center">
+								<img src="imgs/psd.svg" class="mar-10 w-40" alt>
+								<div>
+									<span class="d-block">MY-file.pdf</span>
+									<span class="f-s-15 c-gray">Youseif</span>
+								</div>
+							</div>
+							<span class="d-block btn-shape bg-eee f-s-14">2.3mb</span>
+						</div>
+					</div>
+					<!--End Latest UpdUploadsate  -->
+					<!-- Start Last Project Progress -->
+					<div class="last-project-progress padd-20 bor-rad-10 bg-white pos-relative">
+						<h2 class="mar-0 mar-b-20">Last Project Progress</h2>
+						<ul class="pos-relative mar-t-10">
+							<li class=" d-felx  align-center mar-b-25 done ">Got The Project</li>
+							<li class=" d-felx  align-center mar-b-25 done ">Started The Project
+							</li>
+							<li class=" d-felx  align-center mar-b-25 done ">The Project About To
+								Finish</li>
+							<li class=" d-felx  align-center mar-b-25 current ">Test The Project</li>
+							<li class=" d-felx  align-center ">Finish The Project & Get Money</li>
+						</ul>
+						<img src="imgs/project.png" alt>
+					</div>
+					<!-- End Last Project Progress -->
+					<!-- Start Reminder -->
+					<div class="reminder  padd-20 bor-rad-10 bg-white ">
+						<h2 class="mar-0 mar-b-20">Reminders</h2>
+						<ul class="mar-0">
+							<li class="d-felx align-center mar-b-25">
+								<span class="d-block bor-rad-half bg-blue"></span>
+								<div class="pad-l-15 blue">
+									<p class="mar-0 mar-b-5 fw-bold">
+										Check My Tasks List</p>
+									<p class="c-gray f-s-13 mar-0">28/09/2022 - 12:00am</p>
+								</div>
+							</li>
+							<li class="d-felx align-center mar-b-25">
+								<span class="d-block bor-rad-half bg-green"></span>
+								<div class="pad-l-15 green">
+									<p class="mar-0 mar-b-5 fw-bold">
+										Check My Projects</p>
+									<p class="c-gray f-s-13 mar-0">26/10/2022 - 12:00am</p>
+								</div>
+							</li>
+							<li class="d-felx align-center mar-b-25">
+								<span class="d-block bor-rad-half bg-orange"></span>
+								<div class="pad-l-15 orange">
+									<p class="mar-0 mar-b-5 fw-bold">
+										Call All My Clients</p>
+									<p class="c-gray f-s-13 mar-0">05/11/2022 - 12:00am</p>
+								</div>
+							</li>
+							<li class="d-felx align-center">
+								<span class="d-block bor-rad-half bg-red"></span>
+								<div class="pad-l-15 red">
+									<p class="mar-0 mar-b-5 fw-bold">
+										Finish The Development Workshop</p>
+									<p class="c-gray f-s-13 mar-0">20/12/2022 - 12:00am</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- end Reminder -->
+					<!-- Start Last Tasks -->
+					<div class="last-task padd-20 bor-rad-10 bg-white">
+						<h2 class="mar-0 mar-b-20">Latest Post</h2>
+						<div class="d-felx align-center">
+							<img src="imgs/avatar.png" alt class="w-48 mar-r-15">
+							<div>
+								<span class="fw-bold d-block mar-b-5 mar-0"> Mohamed Mahmoud</span>
+								<p class="f-s-13 c-gray mar-0">About 1 Hours Ago</p>
+							</div>
+						</div>
+						<div class=" text f-s-15 pad-t-15 pad-b-15 mar-t-20 mar-b-20">
+							<p>You Can Fool All Of The People Some Of The Time, And Some Of The
+								People All Of The Time, But You Can't Fool All Of The People All Of The
+								Time.</p>
+						</div>
+						<div class="between-flex c-gray">
+							<div>
+								<i class="fa-regular fa-heart"></i>
+								2.0k
+							</div>
+							<div>
+								<i class="fa-regular fa-comments"></i>
+								900
+							</div>
+						</div>
+					</div>
+					<!-- End Last Tasks -->
+					<!-- Start Social media -->
+					<div class="social-meida padd-20 bg-white bor-rad-10">
+						<h2 class="mar-0 mar-b-20">Social Media Users</h2>
+						<ul>
+							<li class="twitter space-between d-felx  mar-b-10 pos-relative padd-15">
+								<i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+								<span>Mhmd0Mhmod</span>
+								<a href="https://twitter.com/Mhmd0Mhmod" class="btn-shape">Follow Me</a>
+							</li>
+							<li class="facebook space-between d-felx  mar-b-10 pos-relative padd-15">
+								<i class="fa-brands fa-facebook fa-2x c-white h-full center-flex"></i>
+								<span>Mohamed Mahmoud</span>
+								<a href="https://www.facebook.com/profile.php?id=100070239934905" class="btn-shape">Add Me</a>
+							</li>
+							<li class="instgram space-between d-felx  mar-b-10 pos-relative padd-15">
+								<i class="fa-brands fa-instagram fa-2x c-white h-full center-flex"></i>
+								<span>itsmhmdmhmod</span>
+								<a href="https://www.instagram.com/itsmhmdmhmod/" class="btn-shape">Follow Me</a>
+							</li>
+							<li class="linkedin space-between d-felx  mar-b-10 pos-relative padd-15">
+								<i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
+								<span>mohamed-mahmoud</span>
+								<a href="www.linkedin.com/in/mohamed-mahmoud-93b103251" class="btn-shape">Follow Me</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Social media -->
+
+				</section>
+				<!-- Start Table -->
+				<div class="table padd-20 bg-white  mar-20 bor-rad-10">
+					<h2 class="mar-0 mar-b-20">Projects</h2>
+					<div>
+						<table class="w-full f-s-15">
+							<thead>
+								<tr>
+									<td>Name</td>
+									<td>Finish Date</td>
+									<td>Client</td>
+									<td>Price</td>
+									<td>Team</td>
+									<td>Status</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										Salah Web Site
+									</td>
+									<td>
+										10 Oct 2023
+									</td>
+									<td>
+										Salah El-din
+									</td>
+									<td>
+										$2500
+									</td>
+									<td>
+										<img src="imgs/team-01.png" alt>
+										<img src="imgs/team-02.png" alt>
+										<img src="imgs/team-03.png" alt>
+										<img src="imgs/team-04.png" alt>
+										<img src="imgs/team-05.png" alt>
+									</td>
+									<td>
+										<span class="btn-shape bg-blue">In Progress</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Visa Project
+									</td>
+									<td>
+										15 Nov 2023
+									</td>
+									<td>
+										MR : Nabil
+									</td>
+									<td>
+										$5000
+									</td>
+									<td>
+										<img src="imgs/team-01.png" alt>
+										<img src="imgs/team-02.png" alt>
+										<img src="imgs/team-03.png" alt>
+										<img src="imgs/team-04.png" alt>
+									</td>
+									<td>
+										<span class="btn-shape bg-orange">Pending</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Seif El-Din Project
+									</td>
+									<td>
+										10 Jun 2024
+									</td>
+									<td>
+										Seif El-Din
+									</td>
+									<td>
+										$5000
+									</td>
+									<td>
+										<img src="imgs/team-01.png" alt>
+										<img src="imgs/team-02.png" alt>
+										<img src="imgs/team-03.png" alt>
+									</td>
+									<td>
+										<span class="btn-shape bg-green">Completed</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+					<!-- End Table -->
+				</main>
+			</div>
+			<script src="Js/main.js"></script>
+		</body>
+
+	</html>

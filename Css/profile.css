@@ -1,0 +1,151 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+
+/* Start Profile */
+/* start overview */
+@media (width<= 767px) {
+	.overflow {
+		flex-direction: column;
+	}
+}
+.overflow .avatar-section {
+	width: 300px;
+}
+@media (width > 767px) {
+	.overflow .avatar-section {
+		border-right: 1px solid #eee;
+	}
+}
+.overflow .avatar-section img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 2px solid #eee;
+}
+.overflow .avatar-section .process {
+	width: 78%;
+	margin: auto;
+	overflow: hidden;
+	height: 6px;
+	border-radius: 6px;
+}
+.overflow .avatar-section .process > span {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 70%;
+	background-color: var(--blue-color);
+	border-radius: 6px;
+}
+/* Start info */
+.info-text div > h3 {
+	font-weight: normal;
+}
+.info-text {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	transition: 0.3s;
+}
+.info-text {
+	opacity: 0.5;
+}
+.info-text:hover {
+	background-color: #f9f9f9;
+}
+.toggle-box {
+	height: 20px;
+	opacity: 1;
+	background-color: black;
+}
+.toggle-box::before {
+	width: 12px;
+	height: 12px;
+	font-size: 9px;
+}
+.toggle-checkbox:checked + .toggle-box::before {
+	left: calc(100% - 16px);
+}
+
+@media (width <= 767px) {
+	.info-text div > h3 {
+		font-size: 16px;
+	}
+	.info-text-main {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.info {
+		border-bottom: none;
+	}
+}
+/* End info */
+/* Start info-other */
+@media (width<= 767px) {
+	.other-info {
+		flex-direction: column;
+	}
+}
+/* Start skills */
+.my-skills {
+	flex-grow: 1;
+}
+.my-skills p:first-of-type {
+	margin-bottom: 40px;
+}
+.my-skills > div {
+	padding: 15px 0;
+	font-size: 15px;
+}
+.my-skills > div:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+.last-activites {
+	flex-grow: 3;
+}
+.last-activites > div img {
+	width: 64px;
+	height: 64px;
+	margin-right: 10px;
+	transition: 0.3s;
+}
+.last-activites > div img:hover {
+	filter: drop-shadow(0 0 5px black);
+}
+.last-activites > div {
+	padding: 5px;
+	padding-bottom: 15px;
+	transition: 0.3s;
+}
+.last-activites > div:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+.last-activites > div:hover {
+	background-color: #f9f9f9;
+}
+.last-activites > div > div h3 {
+	font-weight: normal;
+}
+.last-activites > div > div:last-child {
+	margin-left: auto;
+	text-align: right;
+}
+@media (width <= 767px) {
+	.last-activites > div {
+		flex-direction: column;
+	}
+	.last-activites > div > div:last-child {
+		margin: auto;
+		text-align: center;
+	}
+}
+/* end skills */
+/* End info-other */
+
+/* End overview */
+/* End Profile */

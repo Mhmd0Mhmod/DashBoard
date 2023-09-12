@@ -1,0 +1,63 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+/* Start friends  */
+.r-icon{
+    transition: 0.3s;    
+}
+.r-icon:hover{
+    transform: rotate(1turn);
+}
+section{
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+}
+/* Start friends content */
+.friend .contenact{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+}
+.friend .contenact i{
+    background-color: #eee;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    transition: 0.3s;
+
+}
+.friend .contenact i:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.friend img.image{
+    width: 100px;
+    height: 100px;
+}
+.icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0;
+}
+.icons .vip{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 40px;
+    opacity: 0.2;
+}
+/* End friends content */
+/* End friends  */

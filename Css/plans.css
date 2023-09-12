@@ -1,0 +1,74 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+/* Start Plans */
+section.plans-page{
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+}
+
+@media (width <= 767px ){
+    section.plans-page{
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+}
+section.plans-page .plan .top{
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+section.plans-page .plan.green .top{
+    outline-color: var(--green-color);
+}
+section.plans-page .plan.blue .top{
+    outline-color:var(--blue-color) ;
+}
+section.plans-page .plan.orange .top{
+    outline-color:var(--orange-color) ;
+}
+section.plans-page .plan .top div{
+    position: relative;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+}
+section.plans-page .plan .top div span{
+    position: absolute;
+    top: 0px;
+    font-size: 25px;
+    left: -20px;
+}
+section.plans-page .plan ul li{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+section.plans-page .plan ul li i:last-child{
+    margin-left: auto;
+    color: var(--grey-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+section.plans-page .plan ul li i:last-child:hover{
+    color: var(--red-color);
+}
+section.plans-page .plan ul li i:first-of-type{
+    font-size: 18px;
+}
+section.plans-page .plan ul li .yes{
+    color: var(--green-color);
+}
+section.plans-page .plan ul li i:first-of-type:not(.yes){
+    color: var(--red-color);
+}
+section.plans-page .plan a:last-child{
+    margin-left: auto;
+    padding: 10px 20px;
+}
+/* End Plans */

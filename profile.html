@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- normalize -->
+		<link rel="stylesheet" href="Css/normalize.css" />
+		<!-- Font Awsme -->
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<!-- Css -->
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<link rel="stylesheet" href="Css/profile.css">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet" />
+		<title>Template || Four</title>
+	</head>
+
+	<body>
+		<div class="all-page d-felx">
+			<aside class="bg-white padd-20 pos-relative">
+				<h3 class="pos-relative mar-t-0 text-c " onclick="hidaside(this)">Mohamed</h3>
+				<h3 class="pos-relative mar-t-0 text-c d-none" onclick="hidaside(this)">OZO</h3>
+				<ul>
+					<li>
+						<a href="index.html"
+							class=" d-felx align-center f-s-14 c-black bor-rad-6 pad-10">
+							<i class="fa-solid fa-chart-line fa-fw"></i>
+							<span class="hide-mobile">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="settings.html">
+							<i class="fa-solid fa-gear fa-fw"></i>
+							<span class="hide-mobile">Settings</span>
+						</a>
+					</li>
+					<li>
+						<a class="active d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="profile.html">
+							<i class="fa-regular fa-user fa-fw"></i>
+							<span class="hide-mobile">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="projects.html">
+							<i class="fa-solid fa-diagram-project fa-fw"></i>
+							<span class="hide-mobile">Projects</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="courses.html">
+							<i class="fa-solid fa-graduation-cap fa-fw"></i>
+							<span class="hide-mobile">Courses</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="friends.html">
+							<i class="fa-regular fa-circle-user fa-fw"></i>
+							<span class="hide-mobile">Friends</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="files.html">
+							<i class="fa-regular fa-file fa-fw"></i>
+							<span class="hide-mobile">Files</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-felx align-center f-s-14 c-black bor-rad-6 pad-10"
+							href="plans.html">
+							<i class="fa-regular fa-credit-card fa-fw"></i>
+							<span class="hide-mobile">Plans</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+			<main class="w-full">
+				<!-- Start Head -->
+				<nav class="bg-white between-flex padd-15">
+					<div class="search pos-relative">
+						<input type="search" placeholder="Type a Keyword"
+							class="pad-10 bor-rad-6 f-s-13" />
+					</div>
+					<div class="icon d-felx align-center">
+						<span class="pos-relative notification">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="imgs/avatar.png" alt />
+					</div>
+				</nav>
+				<h1 class="pos-relative">Profile</h1>
+				<section class="mar-20">
+					<!-- Start info section -->
+
+					<div class="overflow bg-white d-felx align-center bor-rad-10">
+						<div class="avatar-section padd-20 text-c">
+							<img src="imgs/avatar.png" alt>
+							<h3>Mohamed Mahmoud</h3>
+							<p class="c-gray mar-t-10">Level 20</p>
+							<div class="process bg-eee pos-relative">
+								<span></span>
+							</div>
+							<div class="stars mar-t-10 mar-b-10">
+								<i class="fa-solid fa-star c-orange f-s-13"></i>
+								<i class="fa-solid fa-star c-orange f-s-13"></i>
+								<i class="fa-solid fa-star c-orange f-s-13"></i>
+								<i class="fa-solid fa-star c-orange f-s-13"></i>
+								<i class="fa-solid fa-star c-orange f-s-13"></i>
+							</div>
+							<span class="c-gray f-s-14">600 Rating</span>
+						</div>
+						<div class="info w-full">
+							<div class="info-text padd-15 d-felx f-wrap align-center" id="sec-1">
+								<div class="mar-b-20 w-full d-felx space-between align-center">
+									<h3 class="c-gray mar-0">General Information</h3>
+									<label for="toggle-switch-general-info" class="label">
+										<input type="checkbox" class="toggle-checkbox"
+											onchange="hideInfo(this,'sec-1')"
+											id="toggle-switch-general-info">
+										<div class="toggle-box"></div>
+									</label>
+								</div>
+								<div
+									class="info-text-main d-felx f-wrap pad-10 f-s-14 w-full space-between align-center">
+									<div class="c-gray">
+										Full Name : <span class="c-black">Mohamed Mahmoud</span>
+									</div>
+									<div class="c-gray">
+										Gender : <span class="c-black">Male</span>
+									</div>
+									<div class="c-gray">
+										Country : <span class="c-black">Egypt</span>
+									</div>
+								</div>
+							</div>
+							<div class="info-text padd-15 d-felx f-wrap align-center" id="sec-2">
+								<div class="mar-b-20 w-full d-felx space-between align-center">
+									<h3 class="c-gray mar-0">Personal Information</h3>
+									<label for="toggle-switch-general-info-two" class="label">
+										<input type="checkbox" class="toggle-checkbox"
+											onchange="hideInfo(this,'sec-2')"
+											id="toggle-switch-general-info-two">
+										<div class="toggle-box"></div>
+									</label>
+								</div>
+								<div
+									class="info-text-main d-felx f-wrap pad-10 f-s-14 w-full space-between align-center">
+									<div class="c-gray">
+										Email : <span class="c-black">iammhmdmhmod@gmail.com</span>
+									</div>
+									<div class="c-gray">
+										Phone : <span class="c-black">01006431469</span>
+									</div>
+									<div class="c-gray">
+										Date Of Birth : <span class="c-black">18/11/2002</span>
+									</div>
+								</div>
+							</div>
+							<div class="info-text padd-15 d-felx f-wrap align-center" id="sec-3">
+								<div class="mar-b-20 w-full d-felx space-between align-center">
+									<h3 class="c-gray mar-0">Job Information</h3>
+									<label for="toggle-switch-general-info-three" class="label">
+										<input type="checkbox" class="toggle-checkbox"
+											id="toggle-switch-general-info-three"
+											onchange="hideInfo(this,'sec-3')">
+										<div class="toggle-box"></div>
+									</label>
+								</div>
+								<div
+									class="info-text-main d-felx f-wrap pad-10 f-s-14 w-full space-between align-center">
+									<div class="c-gray">
+										Title : <span class="c-black">Full-Stack Developer</span>
+									</div>
+									<div class="c-gray">
+										Programming-Language : <span class="c-black">Java Script</span>
+									</div>
+									<div class="c-gray">
+										Years Of Experience : <span class="c-black">2+</span>
+									</div>
+								</div>
+							</div>
+							<div class="info-text padd-15 d-felx f-wrap align-center" id="sec-4">
+								<div class="mar-b-20 w-full d-felx space-between align-center">
+									<h3 class="c-gray mar-0">Billing Information</h3>
+									<label for="toggle-switch-general-info-four" class="label">
+										<input type="checkbox" class="toggle-checkbox"
+											id="toggle-switch-general-info-four"
+											onchange="hideInfo(this,'sec-4')">
+										<div class="toggle-box"></div>
+									</label>
+								</div>
+								<div
+									class="info-text-main d-felx f-wrap pad-10 f-s-14 w-full space-between align-center">
+									<div class="c-gray">
+										Payment Method: <span class="c-black">Paypal</span>
+									</div>
+									<div class="c-gray">
+										Email : <span class="c-black">NotValid Now</span>
+									</div>
+									<div class="c-gray">
+										Subscription : <span class="c-black">Montly</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End info section -->
+					<!-- Start other info -->
+					<div class="other-info w-full d-felx gap-20  mar-t-20">
+						<!-- Start my skills -->
+						<div class="my-skills padd-15 bg-white bor-rad-10">
+							<h2 class="mar-0 mar-b-10">My Skills</h2>
+							<p class="mar-0 c-gray">Complete Skills List</p>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">HTML</span>
+								<span class="btn-shape bg-eee">Pugjs</span>
+								<span class="btn-shape bg-eee">HAML</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">CSS</span>
+								<span class="btn-shape bg-eee">SASS</span>
+								<span class="btn-shape bg-eee">Stylus</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">JavaScript</span>
+								<span class="btn-shape bg-eee">TypeScript</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">Vuejs</span>
+								<span class="btn-shape bg-eee">Reactjs</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">Jest</span>
+								<span class="btn-shape bg-eee">Jasmine</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">PHP</span>
+								<span class="btn-shape bg-eee">Laravel</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">Python</span>
+								<span class="btn-shape bg-eee">Django</span>
+							</div>
+							<div class="text-c-mobile">
+								<span class="btn-shape bg-eee">Jasmine</span>
+								<span class="btn-shape bg-eee">Jest</span>
+							</div>
+
+						</div>
+						<!-- End my skills -->
+						<!-- STart lastes activitye -->
+						<div class="last-activites padd-15 bg-white bor-rad-10">
+							<h2 class="mar-0 mar-b-10">Latest Activities</h2>
+							<p class="c-gray">Latest Activities</p>
+							<div class=" d-felx align-center text-c-mobile">
+								<img src="imgs/activity-01.png" alt="">
+								<div >
+									<h3>Store</h3>
+									<p class="mar-t-0 c-gray">Bought The Mastering Python Course</p>
+								</div>
+								<div>
+									<h3>18:10</h3>
+									<p class="c-gray f-s-15">Yestarday</p>
+								</div>
+							</div>
+							<div class=" d-felx align-center text-c-mobile">
+								<img src="imgs/activity-02.png" alt="">
+								<div >
+									<h3>Academy</h3>
+									<p class="mar-t-0 c-gray">Got The PHP Certificate</p>
+								</div>
+								<div>
+									<h3>16:20</h3>
+									<p class="c-gray f-s-15">Yestarday</p>
+								</div>
+							</div>
+							<div class=" d-felx align-center text-c-mobile">
+								<img src="imgs/activity-03.png" alt="">
+								<div >
+									<h3>Badges</h3>
+									<p class="mar-t-0 c-gray">Unlocked The 10 Skills Badge</p>
+								</div>
+								<div>
+									<h3>10:50</h3>
+									<p class="c-gray f-s-15">Yestarday</p>
+								</div>
+							</div>
+							<div class=" d-felx align-center text-c-mobile">
+								<img src="imgs/activity-01.png" alt="">
+								<div >
+									<h3>Store</h3>
+									<p class="mar-t-0 c-gray">Bought The Typescript Course</p>
+								</div>
+								<div>
+									<h3>20:10</h3>
+									<p class="c-gray f-s-15">Today</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- end lastes activitye -->
+					</div>
+
+					<!-- end other info -->
+				</section>
+			</main>
+		</div>
+		<script src="Js/main.js"></script>
+	</body>
+</html>

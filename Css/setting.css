@@ -1,0 +1,195 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+.set-text-area {
+	padding: 10px;
+	min-height: 150px;
+	min-width: 100%;
+	resize: none;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+section div > h3 {
+	font-weight: 400;
+}
+
+::placeholder {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.genarl-info div input {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.genarl-info div input[disabled] {
+	cursor: no-drop;
+	background-color: #f0f4f8;
+}
+
+/* security-info */
+.security-info > div:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+/* End security-info */
+/* social-info */
+.social-info > div i {
+	width: 40px;
+	height: 40px;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-right: none;
+	border-radius: 6px 0 0 6px;
+	transition-duration: 0.3s;
+}
+.social-info > div i:hover {
+	color: black;
+}
+.social-info > div input {
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	height: 40px;
+	border-right: none;
+	padding-left: 20px;
+	border-radius: 0 6px 6px 0;
+}
+
+/* End social-info */
+/* Start Widegt Control */
+.social-info ul li {
+	margin-top: 15px;
+	font-size: 20px;
+}
+.social-info ul li label {
+	padding-left: 30px;
+    position: relative;
+}
+.social-info ul li input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.social-info ul li label::after,.social-info ul li label::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+}
+.social-info ul li label::before {
+    content: "";
+    transform: translateY(-50%);
+    border: 2px solid var(--grey-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.social-info ul li label:hover::before {
+    border-color: var(--blue-alt-color);
+}
+
+.social-info ul li label::after {
+    font-family: var(--fa-style-family-classic);
+	content: "\f00c";
+    font-weight: 900;
+    transform: translateY(-50%) scale(0) ;
+    background-color: var(--blue-color);
+    color: white;
+    width: 19px;
+    height: 19px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.social-info ul li input[type="checkbox"]:checked + label::after{
+    transform: translateY(-50%) scale(1) rotate(1turn);
+}
+.backup-manager ul{
+    border-bottom: 2px solid #eee;
+}
+.backup-manager ul li {
+    margin-bottom: 15px;
+}
+.backup-manager ul li label {
+    padding-left: 30px;
+    position: relative;
+    font-size: 20px;
+}
+.backup-manager ul li label::before,.backup-manager ul li label::after{
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.backup-manager ul li label::before{
+    content: "";
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    transition: 0.3s;
+}
+.backup-manager ul li input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-manager ul li label:hover:before,.backup-manager ul li input[type="radio"]:checked+label:before{
+    border-color:var(--blue-alt-color);
+}
+.backup-manager ul li label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "";
+    font-weight: 900;
+    left: 5px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue-color);
+    transform: scale(0) translateY(-50%);
+    transform-origin: top; 
+}
+
+.backup-manager ul li input[type="radio"]:checked + label::after{
+    transform: scale(1) translateY(-50%);
+}
+.backup-manager .servers {
+    gap: 10px;
+}
+.backup-manager .servers  > div{
+    padding: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-weight: 500;
+}
+@media (width <= 767px){
+    .backup-manager .servers{
+        flex-direction: column;
+    }
+}
+.backup-manager .servers input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-manager .servers input[type="radio"]:checked + div{
+    border-color: var(--blue-color);  
+    color: var(--blue-color);
+} 
+
+/* End Widegt Control */

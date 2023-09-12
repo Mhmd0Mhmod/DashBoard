@@ -1,0 +1,89 @@
+:root {
+	--blue-color: #0075ff;
+	--blue-alt-color: #0d69d5;
+	--orange-color: #f59e0b;
+	--green-color: #22c55e;
+	--red-color: #f44336;
+	--grey-color: #888;
+}
+/* Start Courses */
+section {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (width <= 875px){
+    section{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+@media (width <= 767px){
+    section{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+/* Start course */
+.course{
+    overflow: hidden;
+}
+.course .icon{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid#eee;
+    z-index: 1;
+    width: 64px;
+    top: 20px;
+    left: 20px;
+}
+.course .image{
+    overflow: hidden;
+}
+.course img{
+    max-width: 100%;
+    transition: 0.3s;
+}
+.course img:hover + .info .info-hidden , .info .info-hidden:hover {
+    left: 0%;
+}
+
+.course .image span{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.course .image:hover img{
+    transform: scale(1.2);
+}
+.course .image:hover span{
+    animation-name: flash;
+    animation-duration: 0.5s;
+}
+@keyframes flash {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+}
+.course .info .discreption{
+    line-height: 1.5;
+}
+.course .showen-txt{
+    border-top: 1px solid #eee;
+}
+.course .showen-txt .btn{
+    cursor: pointer;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end course */
+/* End Courses */
